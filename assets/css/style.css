@@ -29,7 +29,14 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --Main-white: #FFFFFF;
+    --Second-white: #f6f6f6;
+    --light-blue:#007aff;
+    --dark-blue: #00043e;
+    --light-grey:#818181;
+    --dark-grey:#303030;
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
@@ -81,7 +88,92 @@ footer{}
 /* INICIAL */
 main{}
 /* INICIAL */
+/*SOBRE*/
+.secaoSobre{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-col:nth-child(3){
+    background-color: var(--Second-white);
+}
+.flex-col:nth-child(4){
+    background-color: var(--Second-white);
+}
 
+.flex-col h2{
+    font-size: 24px;
+    margin:50px;
+    color: var(--dark-grey) ;
+}
+#js{
+    text-align: center;
+    margin-top: 0;
+}
+
+
+.flex-col p{
+    font-size: 19px;
+    margin: 50px;
+    color: var(--dark-grey);
+    line-height: 1.5;
+}
+.flex-col span{
+    font-size: 19px;
+    color: var(--light-grey);
+    margin: 50px;
+    line-height: 1.5;
+}
+.flex-col button{
+    font-size: 24px;
+    color:var(--dark-grey);
+    width: 260px ;
+    height: 50px;
+    background-color: var(--Main-white);
+    border: 1px var(--light-grey) solid;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.flex-col figure{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-col figure img{
+   width: 50%;
+   margin: 70px
+}
+.flex-col figure img:nth-child(2){
+    width: 50%;
+ }
+
+.flex-col figure figcaption{
+    display: none;
+}
+.flex-col ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 50px;
+    line-height: 1.5;
+}
+.flex-col li{
+    list-style: inside ;
+    color: var(--light-grey);
+    font-size: 19px;
+    text-align: left;
+}
+
+
+
+/*SOBRE*/
 /* EXTRAS */
 
 /* para estilizar a scrollbar */
