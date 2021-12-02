@@ -1,4 +1,3 @@
-
 /*
 Theme Name: Landing Page Kenzie Academy
 Theme URI: https://kenzie.com.br/
@@ -29,6 +28,7 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
+
 :root{
     --Main-white: #FFFFFF;
     --Second-white: #f6f6f6;
@@ -38,55 +38,171 @@ family=Lato -> Títulos, textos
     --dark-grey:#303030;
 }
   
+
 /* GERAL */
-html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
     list-style: none;
 }
-img{
+
+img {
     max-width: 800px;
 }
-div.flex{
+
+div.flex {
     display: flex;
 }
-div.full-container{
+
+div.full-container {
     width: 100%;
     max-width: 1850px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-div.large-container{
+
+div.large-container {
     width: 100%;
     max-width: 1170px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-div.container{
+
+div.container {
     width: 100%;
     max-width: 1140px;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 /* GERAL */
-  
+
 /* HTML */
-html{}
+html {}
+
 /* HTML */
-  
+
 /* BODY */
-body{}
+body {
+  background-color: #FFFFFF;
+}
+
 /* BODY */
-  
+h2 {
+    font-family: "Montserrat";
+}
+
 /* HEADER */
-header{}
+header {}
+
 /* HEADER */
-  
+
 /* FOOTER */
-footer{}
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #303030;
+    align-items: center;
+    margin: 15px 5px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #303030;
+}
+
 /* FOOTER */
 
 /* INICIAL */
-main{}
+main {}
+
+main .secaoContato {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 5px;
+    align-items: center;
+    align-content: space-between;
+    width: 300px;
+}
+
+.secaoContato-informacoes p {
+    font-size: 15px;
+    width: 250px;
+color: #818181;
+padding:10px;
+height: 60px;
+}
+.secaoContato-informacoes a {
+    text-decoration: none;
+    color: #818181;
+   padding:10px;
+}
+.secaoContato-informacoes ul{
+    margin: 0 0 0 5px;
+}
+.secaoContato-informacoes li {
+    margin: 10px 0;
+}
+.secaoContato-informacoes li img {
+    width: 20px;
+  
+}
+main .flex-col{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #818181;
+}
+main .flex-col h2{
+    color:#303030;
+text-transform: uppercase;
+margin: 15px 0;
+}
+#nome{
+        width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 15px ;
+    border: 1px solid #818181;
+    border-radius: 4%;
+}
+#email{
+        width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 15px ;
+    border: 1px solid #818181;
+    border-radius: 4%;
+}
+#mensagem{
+        width: 200px;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 15px  0;
+    border: 1px solid #818181;
+    border-radius: 2%;
+}
+#send{
+        width: 60px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 15px  0;
+    border: 1px solid #818181;
+    border-radius: 2%;
+    background-color: #f6f6f6;
+    color: #818181;
+}
+
+main .flex {
+    display: flex;
+    flex-direction: column;
+
+    align-content: space-around;
+    align-items: center;
+}
+
+
+
 /* INICIAL */
 /*SOBRE*/
 .secaoSobre{
@@ -177,19 +293,26 @@ main{}
 /* EXTRAS */
 
 /* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
+::-webkit-scrollbar {}
+
+::-webkit-scrollbar-button {}
+
+::-webkit-scrollbar-track {}
+
+::-webkit-scrollbar-track-piece {}
+
+::-webkit-scrollbar-thumb {}
+
+::-webkit-scrollbar-corner {}
+
+::-webkit-resizer {}
 
 /* EXTRAS */
-  
+
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
+@media (min-width: 320px) and (max-width: 480px) {}
+
+@media screen and (min-width: 800px) {}
+
 /* MEDIA QUERIES */
