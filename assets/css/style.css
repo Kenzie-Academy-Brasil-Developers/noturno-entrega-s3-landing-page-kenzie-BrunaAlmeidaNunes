@@ -83,7 +83,7 @@ html {}
 
 /* BODY */
 body {
-  background-color: #FFFFFF;
+  background-color: var(--Main-white);
 }
 
 /* BODY */
@@ -99,16 +99,17 @@ header {}
 /* FOOTER */
 footer {
     display: flex;
+    width:320px;
     justify-content: center;
     font-size: 15px;
-    color: #303030;
+    color: var(--dark-grey);
     align-items: center;
     margin: 15px 5px;
 }
 
 footer p a {
     text-decoration: none;
-    color: #303030;
+    color: var(--dark-grey);
 }
 
 /* FOOTER */
@@ -128,21 +129,27 @@ main .secaoContato {
 .secaoContato-informacoes p {
     font-size: 15px;
     width: 250px;
-color: #818181;
+color: var(--light-grey);
 padding:10px;
 height: 60px;
 }
 .secaoContato-informacoes a {
     text-decoration: none;
-    color: #818181;
+    color: var(--light-grey);
    padding:10px;
+   font-size: 15px;
 }
 .secaoContato-informacoes ul{
     margin: 0 0 0 5px;
+    
 }
 .secaoContato-informacoes li {
     margin: 10px 0;
+    
+   text-decoration: none;
+   list-style: none;
 }
+
 .secaoContato-informacoes li img {
     width: 20px;
   
@@ -151,10 +158,10 @@ main .flex-col{
    display: flex;
     flex-direction: column;
     align-items: center;
-    color: #818181;
+    color: var(--light-grey);
 }
 main .flex-col h2{
-    color:#303030;
+    color:var(--dark-grey);
 text-transform: uppercase;
 margin: 15px 0;
 }
@@ -163,7 +170,7 @@ margin: 15px 0;
     height: 30px;
     padding: 5px;
     margin-bottom: 15px ;
-    border: 1px solid #818181;
+    border: 1px solid var(--light-grey);
     border-radius: 4%;
 }
 #email{
@@ -171,7 +178,7 @@ margin: 15px 0;
     height: 30px;
     padding: 5px;
     margin-bottom: 15px ;
-    border: 1px solid #818181;
+    border: 1px solid var(--light-grey);
     border-radius: 4%;
 }
 #mensagem{
@@ -179,18 +186,19 @@ margin: 15px 0;
     height: 100px;
     padding: 5px;
     margin-bottom: 15px  0;
-    border: 1px solid #818181;
+    border: 1px solid var(--light-grey);
     border-radius: 2%;
 }
 #send{
-        width: 60px;
-    height: 30px;
-    padding: 5px;
-    margin-bottom: 15px  0;
-    border: 1px solid #818181;
-    border-radius: 2%;
-    background-color: #f6f6f6;
-    color: #818181;
+font-size: 19px;
+    color: var(--dark-grey);
+    width: 100px;
+    height: 50px;
+    background-color: var(--Main-white);
+    border: 1px var(--light-grey) solid;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 main .flex {
@@ -281,12 +289,57 @@ main .flex {
     line-height: 1.5;
 }
 .flex-col li{
-    list-style: inside ;
+
+    list-style: none ;
+
     color: var(--light-grey);
     font-size: 19px;
     text-align: left;
 }
 
+
+
+
+/*SOBRE*/
+/*CURSOS*/
+.secaoCursos{}
+.secaoCursos article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.secaoCursos article h2{
+    font-size:24px;
+    color: var(--dark-grey);
+    margin: 50px;
+}
+.secaoCursos article p{
+    font-size: 19px;
+    color: var(--dark-grey);
+    margin-bottom: 50px;
+}
+.secaoCursos article ul{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.secaoCursos article ul li{}
+.secaoCursos article ul li img{
+    height: 150px;
+}
+.secaoCursos article ul li h3{
+    font-size: 24px;
+    color: var(--dark-grey);
+}
+.secaoCursos article ul li p{
+    font-size: 19px;
+    color: var(--light-grey) ;
+    line-height: 1.5;
+    margin-top: 50px;
+}
+
+
+/*CURSOS*/
 
 
 /*SOBRE*/
@@ -313,6 +366,14 @@ main .flex {
 /* MEDIA QUERIES */
 @media (min-width: 320px) and (max-width: 480px) {}
 
-@media screen and (min-width: 800px) {}
+@media screen and (min-width: 800px) {
+    main .secaoContato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 900px;
+}
+}
 
 /* MEDIA QUERIES */
