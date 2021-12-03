@@ -174,6 +174,46 @@ main{}
 
 
 /*SOBRE*/
+/*CURSOS*/
+.secaoCursos{}
+.secaoCursos article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.secaoCursos article h2{
+    font-size:24px;
+    color: var(--dark-grey);
+    margin: 50px;
+}
+.secaoCursos article p{
+    font-size: 19px;
+    color: var(--dark-grey);
+    margin-bottom: 50px;
+}
+.secaoCursos article ul{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.secaoCursos article ul li{}
+.secaoCursos article ul li img{
+    height: 150px;
+}
+.secaoCursos article ul li h3{
+    font-size: 24px;
+    color: var(--dark-grey);
+}
+.secaoCursos article ul li p{
+    font-size: 19px;
+    color: var(--light-grey) ;
+    line-height: 1.5;
+    margin-top: 50px;
+}
+
+
+/*CURSOS*/
+
 /* EXTRAS */
 
 /* para estilizar a scrollbar */
