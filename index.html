@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="icon-96x96.webp">
   <link rel="stylesheet" href="./assets/css/style.css">
+  
   <title>Landing Page Kenzie Academy</title>
 </head>
 <body>
@@ -22,7 +22,11 @@
       </figure>
 
       <!-- MENU DE NAVEGAÇÃO -->
-      <nav>
+
+      <input type="checkbox" id="menu_bt">
+      <label for="menu_bt">&#9776;</label>
+
+      <nav class="menu">
         <ul>
           <li><a href="#1">Sobre a Kenzie</a></li>
           <li><a href="#2">Agenda</a></li>
@@ -56,7 +60,7 @@
       <article class="flex">
 
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="flex-col first">
 
           <h2>LOREM IPSUM DOLOR SIT PYTHON</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti incidunt nam quibusdam fugit reprehenderit aperiam temporibus, maiores dolores molestias cupiditate maxime repudiandae sunt voluptatibus commodi tenetur dolorum ipsa sequi.
@@ -69,7 +73,7 @@
         </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="flex-col second">
 
           <figure>
             <img src="./assets/img/python.png" alt="python">
@@ -79,7 +83,7 @@
         </div>
 
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="flex-col third">
 
             <figure>
               <img src="./assets/img/JavaScript-logo.png" alt="Java Script">
@@ -89,9 +93,9 @@
           </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="flex-col fourth">
 
-            <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
+            <h2 id="js"> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
             <ul>
                 <li>The standard Lorem Ipsum passage, used since the 1500s</li>
                 <li>Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
@@ -161,50 +165,55 @@
 
     </section>
 
-<!-- Bônus
 
     <section class="secaoContato">
 
-      <div class="flex">
+      <div class="flex2">
 
-        <div class="flex-col">
+        <div class="flex-col2">
 
           <div class="secaoContato-informacoes">
 
             <p>Contact us and we'll get back to you within 24 hours.</p>
 
             <ul>
-              <li><a href="#">Chicago, US</a> </li>
-              <li><a href="tel:001515151515">+00 1515151515</a></li>
-              <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
+              <li>
+                <img src="./assets/img/placeholder.png" alt="Placeholder">
+                <a href="#">Chicago, US</a> </li>
+              <li>
+                <img src="./assets/img/smartphone.png" alt="Smartphone">
+                <a href="tel:001515151515">+00 1515151515</a></li>
+              <li>
+                <img src="./assets/img/email.png" alt="Email">
+                <a href="malito:myemail@something.com">myemail@something.com</a></li>
             </ul>
 
           </div>
 
         </div>
 
-        <div class="flex-col">
+        <div class="flex-col2" id="contatos">
 
           <h2>Contact</h2>
 
           <form action="">
 
             <div class="form-input-model">
-              <label for="nome">Nome</label>
+              <label for="nome"></label>
               <input type="text" placeholder="Name" id="nome" name="nome">
             </div>
 
             <div class="form-input-model">
-              <label for="email">E-mail</label>
+              <label for="email"></label>
               <input type="text" placeholder="E-mail" id="email" name="email">
             </div>
 
             <div class="form-input-model">
-              <label for="mensagem">E-mail</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
+              <label for="mensagem"></label>
+              <textarea name="mensagem" rows="5" cols="20" placeholder="Messagem" id="mensagem"></textarea>
             </div>
 
-            <input type="submit" value="Send">
+            <input type="submit" value="Send" id="send">
 
           </form>
 
@@ -213,11 +222,11 @@
       </div>
 
     </section>
--->
+
   </main>
 
   <footer>
-    <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
+    <p>Kenzie Academy <a href="kenzie.com.br">- kenzie.com.br</a></p>
   </footer>
 
   <script src="./assets/js/script.js"></script>
