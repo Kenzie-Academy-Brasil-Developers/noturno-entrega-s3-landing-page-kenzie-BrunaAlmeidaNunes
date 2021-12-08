@@ -47,7 +47,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Lato";
     list-style: none;
 }
 
@@ -99,18 +99,21 @@ body {
 
 /* BODY */
 h2 {
-    font-family: "Montserrat";
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* HEADER */
 
 header {
     width: 100%;
+    
 }
+
 
 .topo {
     display: flex;
     align-items: center;
+     font-family: "Lato";
 }
 
 .large-container img {
@@ -124,14 +127,14 @@ header {
 .large-container {
     background-color: var(--dark-blue);
     width: 100%;
-
+ font-family: "Lato", sans-serif;
 }
 
 .menu {
     width: 100%;
     height: 85px;
     background-color: var(--dark-blue);
-    font-family: 'Montserrat', sans-serif;
+    
     font-size: 13px;
     color: var(--Main-white);
 }
@@ -316,6 +319,7 @@ main .flex {
 }
 
 .flex-col h2 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     margin: 50px;
     color: var(--dark-grey);
@@ -324,6 +328,7 @@ main .flex {
 #js {
     text-align: center;
     margin-top: 0;
+     font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -342,7 +347,7 @@ main .flex {
 }
 
 .flex-col button {
-    font-size: 24px;
+    font-size: 14px;
     color: var(--dark-grey);
     width: 260px;
     height: 50px;
@@ -397,8 +402,8 @@ main .flex {
     flex-wrap: wrap;
     align-items: center;
 }
-
 .secaoCursos h2 {
+     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     font-size: 24px;
@@ -408,7 +413,7 @@ main .flex {
 }
 
 .secaoCursos h3 {
-    font-size: 24px;
+    font-size: 19px;
     margin: 10px;
     color: var(--dark-grey);
     line-height: 1.5;
@@ -417,7 +422,7 @@ main .flex {
 .secaoCursos p {
     display: flex;
     justify-content: center;
-    font-size: 19px;
+    font-size: 15px;
     margin: 50px;
     color: var(--dark-grey);
     line-height: 1.5;
@@ -488,10 +493,14 @@ main .flex-col {
 }
 
 main .flex-col h2 {
+    font-family: "Montserrat", sans-serif;
     color: var(--dark-grey);
     text-transform: uppercase;
     margin: 60px 0 15px;
     padding: 50px;
+}
+main .flex-col2 h2 {
+     font-family: 'Montserrat', sans-serif;
 }
 
 #nome {
@@ -746,10 +755,10 @@ main .flex-col h2 {
     }
 
     div.flex-col.second img {
-        margin: 0;
-        height: 400px;
-        width: 600px;
-    }
+    margin: 0;
+    height: 390px;
+    width: 390px;
+}
 
     div.flex-col.third {
         height: 400px;
@@ -770,26 +779,27 @@ main .flex-col h2 {
     }
 
     #js h2 {
-        padding: 5px 50px;
+        padding: 5px 30px;
     }
 
     #js {
-        margin-top: 50px;
+        margin-top: 5px;
     }
 
     /* CURSOS  */
-
+    .secaoCursos article {
+        width: 100%;
+    }
     .secaoCursos ul {
         display: grid;
         grid-template-columns: auto auto auto;
-        justify-content: flex-end;
+        justify-content: center;
         flex-wrap: wrap;
         width: 100%;
     }
 
     .secaoCursos li {
-        padding-left: 100px;
-        padding-right: 100px;
+       
         display: flex;
         justify-content: flex-end;
     }
@@ -853,11 +863,28 @@ main .flex-col h2 {
     width: 100%;
     align-items: center;
 } */
+div.flex2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
 
     .flex2.flex-col2 {
-        width: 50%;
-    }
+       
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    }
+    .flex2.flex-col2 form {
+        width:50%;
+      
+    }
     /* .secaoContato-informacoes {
 } */
     .secaoContato-informacoes {
@@ -868,7 +895,7 @@ main .flex-col h2 {
 
         margin: 0;
         margin-top: 50px;
-        margin-left: 10px;
+        margin-left: 0px;
         white-space: nowrap;
         padding: 20px;
     }
@@ -881,13 +908,11 @@ main .flex-col h2 {
         margin: 0;
     }
 
-    #contatos {
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
+   #contatos {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
     #contatos h2 {
         margin: 0;
         text-align: left;
@@ -904,24 +929,24 @@ main .flex-col h2 {
     }
 
     #nome {
-        width: 225px;
-        margin-right: 25px;
+        width: 190px;
+        margin-right: 5px;
         border-radius: 5px;
     }
 
     #email {
-        width: 250px;
+        width: 190px;
         border-radius: 5px;
     }
 
     #mensagem {
-        width: 500px;
+        width: 400px;
         height: 150px;
         border-radius: 5px;
     }
 
     #send {
-        margin-left: 400px;
+        margin-left: 250px;
         border-radius: 5px;
     }
 }
