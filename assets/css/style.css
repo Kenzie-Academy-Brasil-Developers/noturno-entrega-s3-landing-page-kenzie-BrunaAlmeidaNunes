@@ -183,6 +183,7 @@ label[for="menu_bt"] {
 
 
 .secaoDestaque {
+    
     display: flex;
     background-color: var(--dark-blue);
     text-align: center;
@@ -201,7 +202,7 @@ label[for="menu_bt"] {
 }
 
 .secaoDestaque p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato';
     margin: 40px 0;
     font-size: 21px;
     font-weight: bold;
@@ -220,27 +221,27 @@ div.secaoDestaqueFormulario {
 }
 
 .secaoDestaqueFormulario input {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato';
     font-size: 14px;
     font-weight: bold;
     color: var(--light-grey);
     padding-left: 20px;
     border-radius: 7px 0 0 7px;
     border: none;
-    width: 190px;
+    width: 60%;
     height: 50px;
     margin-right: -5px;
 }
 
 .secaoDestaqueFormulario button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato';
     font-size: 14px;
     font-weight: bold;
     background-color: var(--light-blue);
     color: var(--Main-White);
     border: none;
     border-radius: 0 7px 7px 0;
-    width: 90px;
+    width: 40%;
     height: 50px;
 }
 
@@ -668,13 +669,20 @@ main .flex-col2 h2 {
     .secaoDestaque p {
         margin: 20px;
     }
+    div.secaoDestaqueFormulario {
+        width: 80%;
+        max-width: 988px;
+    justify-content: center;
+    align-items: center;
+}
 
     div.secaoDestaqueFormulario input {
-        width: 500px;
+        width: 50%;
         height: 40px;
     }
 
     div.secaoDestaqueFormulario button {
+        width: 30%;
         height: 40px;
 
     }
@@ -953,7 +961,7 @@ div.flex2 {
 
 /*FOOTER DESKTOP*/
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .menu a {
         display: none;
     }
